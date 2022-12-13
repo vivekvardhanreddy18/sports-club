@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Subscription</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("regsiter.jpg");
+            background-size: 100% 800px;
+        }
+        .register{
+            background: grey;
+            width:500px;
+            margin:0px 0px 0px 500px;
+            color:white;
+            font-size:18px;
+            padding:20px;
+            border-radius: 10px;
+        }
+        h1{
+            color:yellow;
+            text-align:center;
+            padding:20px;
+        }
+        h2{
+            color:black;
+            text-align:center;
+            padding:20px;
+        }
+        #register{
+            margin-left: 100px;
+        }
+        label{
+            color:black;
+            font-family:sans-serif;
+            font-size:18px;
+        }
+        #name{
+            width:300px;
+            border:none;
+            border-radius: 3px;
+            outline:0;
+            padding:7px;
+        }
+        #ph{
+            width:65px;
+            padding:7px;
+            border:none;
+            border-radius:3px;
+            outline:0;
+        }
+        #num{
+            width:230px;
+            padding:7px;
+            border:none;
+            border-radius: 3px;
+            outline:0;
+        }
+        #sub{
+            width:130px;
+            padding:7px;
+            font-family: sans-serif;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 600;
+            border:none;
+            border-radius: 3px;
+            outline:0;
+            
+        }
+        #clear{
+            width:130px;
+            padding:7px;
+            font-family: sans-serif;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 600;
+            border:none;
+            border-radius: 3px;
+            outline:0;
+            float: right;
+            margin-right: 50px;
+
+        }
+        
+    </style>
+    <body>
+        <h1><u>   Registration Form</u></h1>
+        <div class="register">
+            <h2><u>Register Here</u></h2>
+            <form method="post" id="register" action="">
+                <label> First Name  :</label><br/>
+                <input type="text" name="Fname" id="name" placeholder="Enter your First Name"><br/><br/>
+                <label> Last Name  :</label><br/>
+                <input type="text" name="Lname" id="name" placeholder="Enter your Last Name"><br/><br/>
+                <label>Mobile Number  :</label><br/>
+                <select id="ph">
+                    <option>+91</option>
+                    <option>+92</option>
+                    <option>+93</option>
+                    <option>+94</option>
+                    <option>+95</option>
+                </select>
+                <input type="number" name="Mnum" id="num" placeholder="Enter your Mobile Number"><br/><br/>
+                <label>E-mail  :</label><br/>
+                <input type="email" name="email" id="name" placeholder="Enter your E-mail Id"><br/><br/>
+                <label>Password  :</label><br/>
+                <input type="password" name="pass" id="name" placeholder="Enter Your Password"><br/><br/>
+                <label>Re-enter Password  :</label><br/>
+                <input type="password" name="pass" id="name" placeholder="Enter Your Password"><br/><br/>
+                <input type="radio" name="male" id="male">
+                <span id="male">&nbsp;Male</span>&nbsp;&nbsp;
+                <input type="radio" name="male" id="male">
+                <span id="male">&nbsp;Female</span>&nbsp;&nbsp;<br/><br/>
+                <input type="submit" value="Submit" id="sub">
+                <input type="submit" value="Clear" id="clear">
+            </form>
+        </div>
+    </body>
+    </head>
+</html>
